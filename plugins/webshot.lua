@@ -11,7 +11,7 @@ end
 
 return {
   patterns = {
-    "^[Ww]eb (.+)$"
+    "^[/!#][Ww]eb (.+)$"
   },
   run = run
 }
