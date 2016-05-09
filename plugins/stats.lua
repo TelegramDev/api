@@ -91,10 +91,10 @@ local function bot_stats()
   return text
 end
 local function run(msg, matches)
-  if matches[1]:lower() == 'telebeyond' then -- Put everything you like :)
+  if matches[1]:lower() == 'telemoon' then -- Put everything you like :)
     local about = _config.about_text
     local name = user_print_name(msg.from)
-    savelog(msg.to.id, name.." ["..msg.from.id.."] used /telebeyond ")
+    savelog(msg.to.id, name.." ["..msg.from.id.."] used /telemoon ")
     return about
   end 
   if matches[1]:lower() == "statslist" then
@@ -121,7 +121,7 @@ local function run(msg, matches)
         return
       end
     end
-    if matches[2] == "telebeyond" then -- Put everything you like :)
+    if matches[2] == telemoon" then -- Put everything you like :)
       if not is_admin1(msg) then
         return "For admins only !"
       else
@@ -143,8 +143,8 @@ return {
     "^[#!/]([Ss]tats)$",
     "^[#!/]([Ss]tatslist)$",
     "^[#!/]([Ss]tats) (group) (%d+)",
-    "^[#!/]([Ss]tats) (telebeyond)",
-	"^[#!/]([Tt]elebeyond)"
+    "^[#!/]([Ss]tats) (telebmoon)",
+	"^[#!/]([Tt]elemoon)"
     }, 
   run = run
 }
