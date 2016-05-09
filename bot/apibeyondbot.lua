@@ -234,30 +234,22 @@ function create_config( )
 	"whitelist",
 	"msg_checks"
     },
-    sudo_users = {157059515,103214508},--Sudo users
+    sudo_users = {90285047},--Sudo users
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Api TeleBeyond V1.0 Open Source
-An Advanced Administration Api Bot Based On TeleSeed Written In Lua
+    about_text = [[Api TeleMoon V1.0 An Advanced Administration Api Bot Based On TeleSeed Written In Lua
 
-Source On GitHub :
-http://GitHub.com/BeyondTeam/Api-TeleBeyond
+Telegram.me/TeleMoonBot
 
-Sudo Users :
-
-Developer&Founder : @SoLiD021
-
-Developer&Manager : @idivanmanheb
-
-Team Channel :
-Telegram.me/BeyondTeam
+Sudo User : @MAKAN [developer,manager,founder
 
 Special Thx To :
-@MrHalix
-@TeleProTeam
-And All My Friends :D
+Seedteam
+and ...
+
+Our channel: @MoonTeam
 ]],
     help_text_realm = [[
-Realm TeleBeyond Commands:
+Realm TeleMoon Commands:
 
 !creategroup [Name]
 Create a group
@@ -338,9 +330,7 @@ This command will send text to [group_id]
 *Only admins and sudo can use kick,ban,unban,newlink,setphoto,setname,lock,unlock,set rules,set about and settings commands
 
 *Only admins and sudo can use res, setowner, commands
-TeleBeyond V1.0
-Channel : @BeyondTeam
-Source : GitHub.com/BeyondTeam/Api-TeleBeyond
+TeleMoon V1.0
 ]],
     help_text = [[
 Commands list :
@@ -469,9 +459,8 @@ will return group ban list
 *Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
 
 *Only owner can use res,setowner,promote,demote and log commands
-TeleBeyond V1.0
-Channel : @BeyondTeam
-Source : GitHub.com/BeyondTeam/Api-TeleBeyond
+TeleMoon V1.0
+Channel : @MoonTeam
 ]],
 	help_text_super =[[
 SuperGroup Commands:
@@ -608,9 +597,8 @@ Returns group logs
 *Only moderators and owner can use block, ban, unban, newlink, link, setphoto, setname, lock, unlock, setrules, setabout and settings commands
 
 *Only owner can use res, setowner, promote, demote, and log commands
-TeleBeyond V1.0
-Channel : @BeyondTeam
-Source : GitHub.com/BeyondTeam/Api-TeleBeyond
+TeleMoon V1.0
+Channel : @MoonTeam
 ]],
   }
   serialize_to_file(config, './data/config.lua')
