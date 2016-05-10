@@ -27,13 +27,13 @@ local function list_all_plugins(only_enabled)
   local nsum = 0
   for k, v in pairs( plugins_names( )) do
     --  ✔ enabled, ❌ disabled
-    local status = '/Disable➣'
+    local status = '/Disable🔴'
     nsum = nsum+1
     nact = 0
     -- Check if is enabled
     for k2, v2 in pairs(_config.enabled_plugins) do
       if v == v2..'.lua' then 
-        status = '/Enable➣' 
+        status = '/Enable🔵' 
       end
       nact = nact+1
     end
@@ -52,17 +52,17 @@ local function list_plugins(only_enabled)
   local nsum = 0
   for k, v in pairs( plugins_names( )) do
     --  ✔ enabled, ❌ disabled
-    local status = '/Disable➣'
+    local status = '/Disable🔴'
     nsum = nsum+1
     nact = 0
     -- Check if is enabled
     for k2, v2 in pairs(_config.enabled_plugins) do
       if v == v2..'.lua' then 
-        status = '/Enable➣' 
+        status = '/Enable🔵' 
       end
       nact = nact+1
     end
-    if not only_enabled or status == '/Enable➣' then
+    if not only_enabled or status == '/Enable🔵' then
       -- get the name
       v = string.match (v, "(.*)%.lua")
      -- text = text..v..'  '..status..'\n'
