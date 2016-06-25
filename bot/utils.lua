@@ -1261,8 +1261,6 @@ function banall_by_reply(extra, success, result)
 		return
   end
 end
- 
-end 
 
 function get_receiver_api(msg) 
   if msg.to.type == 'user' then 
